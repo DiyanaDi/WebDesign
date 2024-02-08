@@ -15,28 +15,62 @@ body,html,.container-fluid{
     background: rgba(0, 0, 0, 0.3);
 }
 
+nav{
+    height: 12vh;
+}
+
+nav li{
+    margin-left: 0.5rem;
+    /*font-family:Georgia, 'Times New Roman', Times, serif;*/
+}
+
+nav li:hover{
+    scale: 1.2;
+}
+
 .map{
     position: relative;
 }
 
 /*MAIN BACKGROUND*/
-.main-bg{
+/*.main-bg{
     height:42rem;
-    background-image:url('/images/slides/slide-2.jpg');
+    background-image:url('/WebDesign-main/web/images/slides/slide-2.jpg');
     background-size: cover;
     background-position:center center;
     padding:15rem 0;
-}
+}/*
 /*MAIN BACKGROUND END*/
+.carousel-inner{
+    height: 89vh;
+}
+
+@media(max-width:768px){
+    .carousel-inner{
+        height: 45vh;
+    }
+}
+
+.carousel-indicators button{
+    margin-bottom: 2rem;
+}
+
+.carousel-item img{
+    height:100%;
+}
+
+.carousel-caption{
+    margin-bottom: 5rem;
+}
 
 .about-size{
-    min-height:38rem;
+    min-height:36rem;
 }
 
 .ab-size{
     width:55%;
     margin: 0 auto;
-    padding:3rem 0;
+    padding:3rem 0 1rem;
 }
 
 .ab-size2{
@@ -56,6 +90,10 @@ body,html,.container-fluid{
     min-height:54rem;
 }
 
+.late-work img:hover{
+    scale: 1.1;
+}
+
 .late-work-style{
     z-index:99;
     height:40%;
@@ -66,10 +104,15 @@ body,html,.container-fluid{
 
 .mid-pn{
     height:16rem;
-    background-image:url('/images/bg/bg-1.jpg');
+    background-image:url('/WebDesign-main/web//images/bg/bg-1.jpg');
     background-size: cover;
     background-position:center center;
     padding:3rem 0;
+}
+
+.mid-pn button:hover{
+    opacity: 0.8;
+    background: rgb(136, 128, 128);
 }
 
 .latest-blog{
@@ -77,6 +120,9 @@ body,html,.container-fluid{
     margin:0 auto;
 }
 
+.ab-size2 img:hover{
+    scale: 1.1;
+}
 .l-blog-position{
     height:7rem;
     width:25%;
@@ -91,4 +137,52 @@ body,html,.container-fluid{
 
 .ct-us{
     min-height:40rem;
+}
+
+.send-m{
+        animation: wiggle 2s linear infinite;
+      }
+      
+      /* Keyframes */
+@keyframes wiggle {
+        0%, 7% {
+          transform: rotateZ(0);
+        }
+        15% {
+          transform: rotateZ(-15deg);
+        }
+        20% {
+          transform: rotateZ(10deg);
+        }
+        25% {
+          transform: rotateZ(-10deg);
+        }
+        30% {
+          transform: rotateZ(6deg);
+        }
+        35% {
+          transform: rotateZ(-4deg);
+        }
+        40%, 100% {
+          transform: rotateZ(0);
+        }
+}
+      
+      
+.send-m {
+        position: absolute;
+        left: calc(50% - 3em);
+        
+        height: 4em;
+        width: 7em;
+        
+        background: #444;
+        background: linear-gradient(top, #555, #333);
+        border: none;
+        border-top: 3px solid orange;
+        border-radius: 0 0 0.2em 0.2em;
+        color: #fff;
+        font-family: Helvetica, Arial, Sans-serif;
+        font-size: 1em;
+        transform-origin: 50% 5em;
 }
