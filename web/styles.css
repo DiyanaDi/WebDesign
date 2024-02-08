@@ -45,9 +45,21 @@ nav li:hover{
     height: 89vh;
 }
 
-@media(max-width:768px){
+@media(max-width:481px){
     .carousel-inner{
-        height: 45vh;
+        height: 20vh;
+    }
+}
+
+@media(min-width:481px) and (max-width:768px){
+    .carousel-inner{
+        height: 40vh;
+    }
+}
+
+@media(max-width:768px){
+    .map{
+        top: 5rem;
     }
 }
 
